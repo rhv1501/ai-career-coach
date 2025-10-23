@@ -9,8 +9,9 @@ import { dark } from "@clerk/themes";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "AI Career Coach",
-  description: "",
+  title: "Mentra - Your Career Growth Partner",
+  description:
+    "Advance your career with personalized guidance and AI-powered tools",
 };
 
 export default function RootLayout({ children }) {
@@ -32,11 +33,12 @@ export default function RootLayout({ children }) {
             disableTransitionOnChange
           >
             <Header />
-            <main className="min-h-screen">{children}</main>
+            <main className="min-h-screen bg-background">{children}</main>
             <Toaster richColors />
 
-            <footer className="bg-muted/50 py-12">
-              <div className="container mx-auto px-4 text-center text-gray-200">
+            <footer className="border-t border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+              <div className="container mx-auto px-4 py-8 text-center text-muted-foreground">
+                <p>© 2025 Mentra. All rights reserved.</p>
               </div>
             </footer>
           </ThemeProvider>
