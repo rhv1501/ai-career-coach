@@ -114,16 +114,24 @@ export default function LandingPage() {
             Career Success Insights
           </h2>
           <p className="text-muted-foreground text-center mb-12 max-w-2xl mx-auto">
-            Data-driven insights to help you make informed decisions about your career journey
+            Data-driven insights to help you make informed decisions about your
+            career journey
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {careerInsights.map((insight, index) => (
-              <Card key={index} className="bg-background transition-all hover:scale-105 hover:shadow-lg">
+              <Card
+                key={index}
+                className="bg-background transition-all hover:scale-105 hover:shadow-lg"
+              >
                 <CardContent className="pt-6">
                   <div className="flex flex-col items-center text-center space-y-4">
                     <div className="text-4xl mb-2">{insight.icon}</div>
-                    <h3 className="text-xl font-bold text-primary">{insight.title}</h3>
-                    <div className="text-3xl font-bold gradient-title">{insight.stat}</div>
+                    <h3 className="text-xl font-bold text-primary">
+                      {insight.title}
+                    </h3>
+                    <div className="text-3xl font-bold gradient-title">
+                      {insight.stat}
+                    </div>
                     <p className="text-muted-foreground">
                       {insight.description}
                     </p>
